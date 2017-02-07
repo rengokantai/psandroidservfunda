@@ -56,4 +56,10 @@ startService(intent)
 - If the service is not running, it will be instantiated and started
   - onCreate 
   - onStartCommand
+- If the service is already running, it will continue to run but
+  - onStartCommand will be called
 
+
+stopService(intent)
+- A started service will run until it receives a call to stopService(intent)
+- stopService stops a started service no matter how many times startService() was earlier called
