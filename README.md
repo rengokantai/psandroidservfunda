@@ -39,4 +39,13 @@ Activity/Provider/Service
 - Continuously interact with calling component
 - By default, it has mechanism to return result back to the caller
 
+###9 Summary
+By default, all components of same app runs in the same process and most apps should not change this  
+But you may create different process for different android components  
 
+using android:process with components in Manifest file
+```
+<receiver android:process=""/>
+<activity android:process=""/>
+<service android:process=""/>
+```
