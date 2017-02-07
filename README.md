@@ -49,3 +49,11 @@ using android:process with components in Manifest file
 <activity android:process=""/>
 <service android:process=""/>
 ```
+
+##4. Working with Started Service
+###2 Starting and Stopping a Service
+startService(intent)
+- If the service is not running, it will be instantiated and started
+  - onCreate 
+  - onStartCommand
+
