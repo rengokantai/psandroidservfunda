@@ -63,3 +63,32 @@ startService(intent)
 stopService(intent)
 - A started service will run until it receives a call to stopService(intent)
 - stopService stops a started service no matter how many times startService() was earlier called
+
+
+stopSelf()
+- called from within the Service class itself
+
+###4 Let's Explore Started Service
+
+
+
+###5 onStartCommand Return Flags
+```
+START_STICKY
+START_REDELIVER_INTENT
+START_NOT_STICKY
+```
+
+
+###7 How to Use Started Service to Execute Long Operations
+```
+protected void doInBackground(Integer... params){
+}
+
+protected void onProcessUpdate(String... values){
+}
+protected void onPostExecute(Void v){
+}
+```
+order: onCreate,onStartCommand, onPreExecute,doInBackground, onPostExecute, onDestroy
+
