@@ -92,3 +92,16 @@ protected void onPostExecute(Void v){
 ```
 order: onCreate,onStartCommand, onPreExecute,doInBackground, onPostExecute, onDestroy
 
+##5. Creating Intent Service
+###1 Overview
+Runs on a seperate thread(worker thread)  
+Need to override```onHandleIntent()```  
+Create a work queue to handle all intents one at a time
+- Hence, handles multi-threading details internally
+Automatically stops itself when work is complete
+- __No need to call stopService or stopSelf__
+
+
+####03:33
+Provides default implementation of onStartCommand
+- onStartCommand->Work Queue->onHandleIntent
