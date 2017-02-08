@@ -105,3 +105,20 @@ Automatically stops itself when work is complete
 ####03:33
 Provides default implementation of onStartCommand
 - onStartCommand->Work Queue->onHandleIntent
+
+
+###2 Let's Explore Intent Service
+####01:42
+MyIntentService.java
+```
+import android.app.IntentService;
+public class MyIntentService extends IntentService{
+  pubilc MyIntentService(){
+    super("");
+  }
+  
+  @Override
+  protected void onHandleIntent(Intent intent){
+  }
+}
+```
