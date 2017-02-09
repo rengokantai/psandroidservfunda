@@ -122,3 +122,13 @@ public class MyIntentService extends IntentService{
   }
 }
 ```
+
+##6. Understanding Communication Flow Between Service and Activity
+###3 Using BroadcastReceiver for Communication
+```
+protected void onResume(){
+  super.onResume();
+  IntentFilter intentFilter=new IntentFilter();
+  intentFilter.addAction("action.service.to.activity");
+}
+```
