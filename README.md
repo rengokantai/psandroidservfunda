@@ -132,3 +132,25 @@ protected void onResume(){
   intentFilter.addAction("action.service.to.activity");
 }
 ```
+
+
+##7. Getting Familiar with Cound Service
+###3 Let's Explore Bound Service
+```
+private ServiceConnection mConnection = new ServiceConnection(){
+  @Override
+  public void onServiceConnected(ComponentName name,IBinder service){}
+  @Override
+  public void onServiceDisconnected(ComponentName name){}
+}
+```
+
+
+MyBoundService.java
+```
+public class MyBoundService extends Service{
+  public IBinder onBind(Intent intent){
+    return null;
+  }
+}
+```
