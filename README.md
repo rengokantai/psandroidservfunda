@@ -154,3 +154,32 @@ public class MyBoundService extends Service{
   }
 }
 ```
+##8. Managing the Lifecycle of a Service
+
+##9. Enhancing App Security with Service
+###1 Taking Care of Application Security
+Use Explicit Intent.
+####05:08
+Never use ```<intent-filter>``` within <service> inside Manifest file
+
+###2 Enhancing Application Security While Using Service
+AndroidManifest.xml
+```
+<manifest xmlns:android="" package="" android:shareUserId="">
+```
+
+
+
+
+##10. Performing Inter-process Communication
+###1 Overview of Inter-process Communication i.e. IPC
+Example When an Activity in Process1 tries to access methods of a Service present in another Process2.
+
+###3 Local Binder Cannot Be Used for IPC
+```
+<service android:name=".MyBoundService" android:process=":my_own_process"/>
+```
+
+
+
+
